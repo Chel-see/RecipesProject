@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Recipe Website</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1>Delicious Recipes</h1>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#recipes">Recipes</a></li>
+        <div class="search">
+          <input type="search" id="searchKey" placeholder="Search by ingredient">
+            <button onclick=searchByIngredient()>Search</button>
+        </div>
+    </ul>
+  <section id="random"></section>
+
+  <section>
+     <h2>Popular Categories</h2>
+      <div>
+        <div id="categories" class="button-container"></div>
+      </div>
+  </section>
+
+    <section>
+      <h2>Popular Cuisines</h2>
+      <!--<div id = "cuisines" "> </div>-->
+      
+      <button id="cuisines"onclick=displayCuisine(cuisines) class="button-container">Go</button>
+    </section>
+
+    <section>
+      <div class="result" class="button-container"> </div>
+      <div class="recipe"> </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+
